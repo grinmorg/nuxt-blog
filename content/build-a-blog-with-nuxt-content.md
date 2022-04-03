@@ -1,15 +1,15 @@
 ---
-title: Build an automatically deployed Blog with Nuxt Content. 🚀
-description: This tutorial shows you how to build and deploy a Nuxt Content Blog for free on Firebase. It includes pagination, searching and categories.
+title: Создание блога с автоматическим деплоем с использованием Nuxt + Markdown и Firebase. 🚀
+description: Бесплатное размещение блога на Firebase с пагинацией, поиском и категориями.
 tags:
   - Nuxt
-  - Tutorial
+  - Туториал
   - Firebase
   - Nuxt Content
 category: Nuxt
 ---
 
-Nuxt Content provides an amazing Developer Experience when it comes to quickly generating a performant site for your blog, docs and other content publishing needs. The Framework is simple to learn and here's how you can get started.
+Создайте ваш блог на фреймворке Nuxt, который прост в осовоении и убежитесь сами как это просто.
 
 <!--more-->
 

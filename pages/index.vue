@@ -1,14 +1,14 @@
 <template>
   <v-container fluid>
     <div class="intro mt-5 mb-8">
-      <h1 class="text-h1">Kaizen Codes Blog</h1>
+      <h1 class="text-h1">Блог веб-разработчика</h1>
       <h2 class="mt-2">
-        100x Your Nuxt.js skills <span class="emoji">🚀</span>
+        <span class="emoji">🚀</span>
       </h2>
     </div>
     <v-row v-if="!posts.length">
       <v-col cols="12">
-        <p>No posts found, yet. <span class="emoji">😁</span></p>
+        <p>Постов не найдено. <span class="emoji">😁</span></p>
       </v-col>
     </v-row>
     <v-row v-else class="posts-container mt-5">
@@ -45,7 +45,7 @@
             <nuxt-content :document="{ body: post.excerpt }" />
           </v-card-text>
           <v-card-actions>
-            <v-btn text :to="post.path">Read More</v-btn>
+            <v-btn text :to="post.path">Читать далее</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -54,10 +54,10 @@
       <v-col class="text-right" cols="12">
         <v-btn :disabled="page === 1" @click="fetchPrevious">
           <v-icon small> mdi-arrow-left </v-icon>
-          Previous
+          Назад
         </v-btn>
         <v-btn :disabled="!nextPage" @click="fetchNext">
-          Next
+          Далее
           <v-icon small> mdi-arrow-right </v-icon>
         </v-btn>
       </v-col>
@@ -91,7 +91,7 @@ export default {
   },
 
   data: () => ({
-    category: 'all',
+    category: 'Все',
     categories: [],
   }),
 
@@ -101,7 +101,7 @@ export default {
       .fetch()
       .then((categories) => {
         const payload = Array.from(new Set(categories.map((c) => c.category)))
-        this.categories = ['all', ...payload]
+        this.categories = ['Все', ...payload]
       })
   },
 

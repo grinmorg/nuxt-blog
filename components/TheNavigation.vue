@@ -1,7 +1,7 @@
 <template>
   <v-app-bar max-height="64">
     <v-app-bar-nav-icon>
-      <img height="36" src="/kaizen.png" alt="Kaizen Codes Blog" />
+      <span style="font-size: 32px">G</span>
     </v-app-bar-nav-icon>
     <div
       v-if="$route.name === 'index'"
@@ -11,7 +11,7 @@
         v-model="search"
         hide-details="auto"
         dense
-        placeholder="Search for a post"
+        placeholder="Поиск по постам"
         prepend-icon="mdi-magnify"
         outlined
         :append-icon="search.length ? 'mdi-close' : ''"

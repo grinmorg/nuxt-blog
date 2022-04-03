@@ -3,7 +3,7 @@
     <section class="my-3">
       <v-btn text to="/">
         <v-icon small class="mr-2">mdi-arrow-left</v-icon>
-        Go back
+        Назад
       </v-btn>
     </section>
     <section class="post-content mt-5">
