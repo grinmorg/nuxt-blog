@@ -13,6 +13,7 @@
         </v-row>
       </v-container>
     </v-main>
+    <TheFooter />
   </v-app>
 </template>
 

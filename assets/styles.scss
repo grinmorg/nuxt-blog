@@ -10,3 +10,9 @@
 .emoji {
   font-weight: 100;
 }
+
+.width {
+  &-full {
+    width: 100%;
+  }
+}

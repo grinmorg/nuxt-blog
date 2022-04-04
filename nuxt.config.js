@@ -6,9 +6,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Kaizen Blogs 📝',
+    title: 'Блог веб-разработчика 📝',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ru',
     },
     meta: [
       { charset: 'utf-8' },
@@ -16,12 +16,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: '100x Your Nuxt.js Skills 🚀',
+        content: 'Небольшой блог по веб разработке',
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/kaizen.png' },
+      // { rel: 'icon', type: 'image/png', href: '/kaizen.png' },
       {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css',
