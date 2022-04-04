@@ -3,6 +3,11 @@
     <v-app-bar-nav-icon>
       <span style="font-size: 32px">G</span>
     </v-app-bar-nav-icon>
+    <v-switch
+      v-model="$vuetify.theme.dark"
+      :label="`Тема: ${$vuetify.theme.dark ? 'Тёмная' : 'Светлая'}`"
+      class="mt-5 ml-auto"
+    ></v-switch>
     <div
       v-if="$route.name === 'index'"
       class="search d-flex align-center justify-end ml-auto"
@@ -24,6 +29,10 @@
 <script>
 export default {
   name: 'TheNavigation',
+  data() {
+    return {
+    }
+  },
   computed: {
     search: {
       get() {

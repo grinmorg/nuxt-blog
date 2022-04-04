@@ -12,8 +12,8 @@
     </section>
     <v-row>
       <v-col class="d-flex justify-space-between align-center mt-5" cols="12">
-        <v-btn :disabled="!prev" :to="prev && prev.path">Previous Post</v-btn>
-        <v-btn :disabled="!next" :to="next && next.path">Next Post</v-btn>
+        <v-btn :disabled="!prev" :to="prev && prev.path">Прошлая запись</v-btn>
+        <v-btn :disabled="!next" :to="next && next.path">Следующая запись</v-btn>
       </v-col>
     </v-row>
   </v-container>

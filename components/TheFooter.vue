@@ -1,12 +1,11 @@
 <template>
-  <v-footer dark padless>
-    <v-card flat tile class="width-full white--text text-center">
+  <v-footer padless>
+    <v-card flat tile class="width-full text-center">
       <v-btn
         v-for="link in links"
         :key="link.href"
         :href="link.href"
         target="_blank"
-        color="white"
         text
         rounded
         class="my-2"
@@ -16,7 +15,7 @@
 
       <v-divider></v-divider>
 
-      <v-card-text class="white--text">
+      <v-card-text>
         {{ new Date().getFullYear() }} — <strong>GrinMorg's webdev blog</strong>
       </v-card-text>
     </v-card>
