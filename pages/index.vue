@@ -134,7 +134,7 @@ export default {
     async fetchPosts(query = '') {
       let baseFetch = this.$content().limit(this.limit)
 
-      if (this.category !== 'all') {
+      if (this.category !== 'Все') {
         baseFetch = baseFetch.where({ category: this.category })
       }
 
