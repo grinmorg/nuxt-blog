@@ -1,5 +1,5 @@
 ---
-title: Создание блога с автоматическим деплоем с использованием Nuxt + Markdown и Firebase. Часть 4 🚀
+title: Создание блога с автоматическим деплоем с использованием Nuxt + Markdown и Firebase. Часть 2 🚀
 description: Бесплатное размещение блога на Firebase с пагинацией, поиском и категориями.
 tags:
   - Nuxt
@@ -50,7 +50,7 @@ The options below will allow your code to deploy automatically to your firebase 
 - ? What do you want to use as your public directory? `dist`
 - ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) `N`
 - ? Set up automatic builds and deploys with GitHub? `y`
-- ? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) (<your-account>/nuxt-content-tutorial)
+- ? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) (your-account/nuxt-content-tutorial)
 - ? Set up the workflow to run a build script before every deploy? (y/N) `y`
 - ? What script should be run before every deploy? (npm ci && npm run build) `npm run test && npm run generate`
 - ? Set up automatic deployment to your site's live channel when a PR is merged? (Y/n) `Y`

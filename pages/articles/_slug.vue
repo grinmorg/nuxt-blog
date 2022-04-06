@@ -25,13 +25,13 @@ export default {
   layout: 'DefaultLayout',
   async asyncData({ $content, error, params }) {
     // TODO Paginate
-    const [prev, next] = await $content()
+    const [prev, next] = await $content('articles')
       .only(['path'])
       .sortBy('createdAt', 'desc')
       .surround(params.slug)
       .fetch()
 
-    const post = await $content(params.slug)
+    const post = await $content('articles', params.slug)
       .fetch()
       .catch(() =>
         error({

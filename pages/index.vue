@@ -73,7 +73,7 @@ export default {
     const limit = 5
     const page = 1
 
-    const fetchedPosts = await $content()
+    const fetchedPosts = await $content('articles')
       .limit(limit)
       .sortBy('createdAt', 'desc')
       .skip((limit - 1) * (page - 1))
@@ -96,7 +96,7 @@ export default {
   }),
 
   fetch() {
-    this.$content()
+    this.$content('articles')
       .only(['category'])
       .fetch()
       .then((categories) => {
@@ -132,7 +132,7 @@ export default {
       await this.fetchPosts()
     },
     async fetchPosts(query = '') {
-      let baseFetch = this.$content().limit(this.limit)
+      let baseFetch = this.$content('articles').limit(this.limit)
 
       if (this.category !== 'Все') {
         baseFetch = baseFetch.where({ category: this.category })
