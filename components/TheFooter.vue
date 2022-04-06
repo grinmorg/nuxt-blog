@@ -33,8 +33,8 @@ export default {
           href: 'https://portfolio-61b97.web.app'
         },
         {
-          name: 'Блог',
-          href: '/'
+          name: 'GitHub',
+          href: 'https://github.com/grinmorg'
         },
       ]
     }

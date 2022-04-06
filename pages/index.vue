@@ -27,11 +27,14 @@
       </v-col>
 
       <v-col v-for="post in posts" :key="post.slug" cols="12" md="6">
-        <v-card :to="post.path" elevation="0">
-          <v-card-title> {{ post.title }} </v-card-title>
+        <v-card elevation="0">
+          <NuxtLink class="link" :to="post.path">
+            <v-card-title :to="post.path"> {{ post.title }} </v-card-title>
+          </NuxtLink>
           <v-card-subtitle>
             {{
-              new Intl.DateTimeFormat('en-US', {
+              new Intl.DateTimeFormat(undefined, { 
+                // В локаль указал undefined - чтобы бралась по умолчанию установленная в окружении (браузере)
                 year: 'numeric',
                 month: 'numeric',
                 day: 'numeric',
@@ -151,3 +154,14 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.v-card .link {
+  text-decoration: none;
+  color: #fff;
+  transition: color .1 linear;
+}
+.v-card .link:hover {
+  color: rgb(200, 238, 255);
+}
+</style>

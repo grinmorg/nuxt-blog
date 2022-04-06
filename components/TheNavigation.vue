@@ -1,8 +1,8 @@
 <template>
   <v-app-bar max-height="64">
-    <v-app-bar-nav-icon>
-      <span style="font-size: 32px">G</span>
-    </v-app-bar-nav-icon>
+    <v-btn text nuxt to="/">
+        <span style="font-size: 32px">G</span>
+    </v-btn>
     <v-switch
       v-model="$vuetify.theme.dark"
       :label="`Тема: ${$vuetify.theme.dark ? 'Тёмная' : 'Светлая'}`"
