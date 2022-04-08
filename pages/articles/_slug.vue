@@ -79,4 +79,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+  .post-content blockquote {
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .post-content blockquote::before {
+    content: "✭";
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 34px;
+  }
+</style>
